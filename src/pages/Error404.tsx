@@ -6,7 +6,7 @@ export default function Error404() {
     return (
         <div className=' bg-pink-400 flex flex-col justify-center items-center'>
 
-            <p className='text-gray-100 font-bold text-5xl text-center mt-28'>
+            <p className='text-pink-200 font-bold text-5xl text-center mt-28'>
                 ERROR 404
             </p>
  
