@@ -4,11 +4,13 @@ import Error404 from "pages/Error404";
 
 export default function App() {
   return (
-    <><div>
-<Nav />
+    <div>
+      <div>
+        <Nav />
+      </div>
+      <div>
+        <Error404 />
+      </div>
     </div>
-    
-    <div className="bg-pink-400 w-full h-screen"><Error404/></div>
-  </>
   )
 }
