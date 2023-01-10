@@ -15,7 +15,7 @@ const Nav = () => {
       <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
       <div className='font-bold text-2xl cursor-pointer flex items-center text-gray-800'>
         <img src={Logo} alt="Logo da marca" className='w-8'/>
-        <p>Org Project</p>
+        <p className='p-2'>Org Project</p>
       </div>
       
       <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
