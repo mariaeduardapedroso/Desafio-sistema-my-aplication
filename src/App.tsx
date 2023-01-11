@@ -2,7 +2,9 @@ import Footer from "components/Footer/Footer";
 import FooterSmall from "components/FooterSmall/FooterSmall";
 import Nav from "components/Nav/Nav";
 import Error404 from "pages/Error404";
+import Home from "pages/Home";
 import Login from "pages/Login";
+import Plans from "pages/Plans";
 
 
 export default function App() {
@@ -11,15 +13,24 @@ export default function App() {
       <div>
         <Nav />
       </div>
-      <div>
+      {/* <div>
         <Error404 />
       </div>
       <div>
         <Footer></Footer>
-      </div>
+      </div> */}
+      {/* <div>
+        <Plans></Plans>
+      </div> */}
       <div>
-        <Login></Login>
+        <Home></Home>
       </div>
+      {/* <div>
+        <Login></Login>
+      </div> */}
+      <div>
+        <Footer></Footer>
+      </div> 
     </div>
   )
 }
