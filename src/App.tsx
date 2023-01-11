@@ -20,10 +20,10 @@ export default function App() {
         <Footer></Footer>
       </div> */}
       <div>
-        <Plans></Plans>
+        {/* <Plans></Plans> */}
       </div>
       <div>
-        {/* <Home></Home> */}
+        <Home></Home>
       </div>
       {/* <div>
         <Login></Login>
