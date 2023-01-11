@@ -19,17 +19,17 @@ export default function App() {
       <div>
         <Footer></Footer>
       </div> */}
-      {/* <div>
-        <Plans></Plans>
-      </div> */}
       <div>
-        <Home></Home>
+        <Plans></Plans>
+      </div>
+      <div>
+        {/* <Home></Home> */}
       </div>
       {/* <div>
         <Login></Login>
       </div> */}
       <div>
-        <Footer></Footer>
+         <Footer></Footer> 
       </div> 
     </div>
   )
