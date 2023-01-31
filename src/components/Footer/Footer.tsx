@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function Footer() {
   return (
@@ -84,7 +83,7 @@ export default function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <a className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/terms">Termos e Condições
+                        href="">Termos e Condições
                     </a>
                   </li>
                   <li>

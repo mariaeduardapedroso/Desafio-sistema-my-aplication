@@ -1,24 +1,9 @@
-import FooterSmall from "components/FooterSmall/FooterSmall";
-import Nav from "components/Nav/Nav";
-import React from "react";
-
+import { Link } from "react-router-dom";
 
 export default function Login() {
     return (
         <>
-            <Nav />
-            <main>
-                <section className="absolute w-full h-full">
-                    <div
-                        className="absolute top-0 w-full h-full bg-pink-400"
-                        style={{
-                            backgroundImage:
-                                "url(" + require("../components/images/register_bg_2.png").default + ")",
-                            backgroundSize: "100%",
-                            backgroundRepeat: "no-repeat"
-                        }}
-                    ></div>
-                    <div className="container mx-auto px-4 h-full">
+                    <div className="container mx-auto px-4 h-full w-full my-8">
                         <div className="flex content-center items-center justify-center h-full">
                             <div className="w-full lg:w-4/12 px-4">
                                 <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white border-0">
@@ -37,7 +22,7 @@ export default function Login() {
                                                 <img
                                                     alt="..."
                                                     className="w-5 mr-1"
-                                                    src={require("../components/images/facebook.svg").default}
+                                                    src={require("../images/facebook.svg").default}
                                                 />
                                                 Facebook
                                             </button>
@@ -49,7 +34,7 @@ export default function Login() {
                                                 <img
                                                     alt="..."
                                                     className="w-5 mr-1"
-                                                    src={require("../components/images/google.svg").default}
+                                                    src={require("../images/google.svg").default}
                                                 />
                                                 Google
                                             </button>
@@ -60,9 +45,9 @@ export default function Login() {
                                         <div className="text-gray-500 text-center mb-3 font-bold">
                                             <small>Ou entre com seu cadastro</small>
                                         </div>
-                                        <form>
+                                        <form autoComplete="on" method="get">
                                             <div className="relative w-full mb-3">
-                                                <label
+                                                <label 
                                                     className="block uppercase text-gray-700 text-xs font-bold mb-2"
                                                     htmlFor="grid-password"
                                                 >
@@ -73,6 +58,9 @@ export default function Login() {
                                                     className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                                                     placeholder="Email"
                                                     style={{ transition: "all .15s ease" }}
+                                                    minLength={7}
+                                                    maxLength={36}
+                                                    required
                                                 />
                                             </div>
 
@@ -88,7 +76,9 @@ export default function Login() {
                                                     className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                                                     placeholder="Senha"
                                                     style={{ transition: "all .15s ease" }}
-                                                />
+                                                    minLength={8}
+                                                    maxLength={16}
+                                                    required/>
                                             </div>
                                             <div>
                                                 <label className="inline-flex items-center cursor-pointer">
@@ -105,43 +95,39 @@ export default function Login() {
                                             </div>
 
                                             <div className="text-center mt-6">
-                                                <button
+                                                <input
                                                     className="bg-pink-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full"
-                                                    type="button"
+                                                    type="submit"
                                                     style={{ transition: "all .15s ease" }}
                                                 >
-                                                    Entrar
-                                                </button>
+                                                
+                                                </input>
                                             </div>
                                         </form>
                                     </div>
                                 </div>
-                                <div className="flex flex-wrap mt-6">
+                                <div className="flex flex-wrap mt-6 relative">
                                     <div className="w-1/2">
                                         <a
-                                            href="#pablo"
-                                            onClick={e => e.preventDefault()}
-                                            className="text-gray-300"
+                                            href="#"
+                                            onClick={(e) => e.preventDefault()}
+                                            className="text-white"
                                         >
-                                            <small>Forgot password?</small>
+                                            <small>Esqueci a senha</small>
                                         </a>
                                     </div>
                                     <div className="w-1/2 text-right">
-                                        <a
-                                            href="#pablo"
-                                            onClick={e => e.preventDefault()}
-                                            className="text-gray-300"
-                                        >
-                                            <small>Create new account</small>
-                                        </a>
+                                        <Link to="/Cadastrar">
+                                            <div className="text-white">
+                                            <small>Criar nova conta</small>
+                                            </div>
+                                            </Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <FooterSmall absolute />
-                </section>
-            </main>
         </>
     );
 }
+

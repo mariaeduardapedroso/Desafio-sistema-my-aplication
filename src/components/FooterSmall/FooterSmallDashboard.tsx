@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function FooterSmall(props: any) {
+export default function FooterSmallDashboard(props: any) {
   return (
     <div className=" bg-pink-400">
       <footer
@@ -35,7 +35,7 @@ export default function FooterSmall(props: any) {
                   </a>
                 </li>
                 <li>
-                  <Link to="/" className="text-white hover:text-gray-800 text-sm font-semibold block py-1 px-3">Página Inicial</Link>
+                  <Link to="/Dashboard" className="text-white hover:text-gray-800 text-sm font-semibold block py-1 px-3">Página Inicial</Link>
                 </li>
               </ul>
             </div>
