@@ -59,7 +59,7 @@ export default function Login() {
                                                     placeholder="Email"
                                                     style={{ transition: "all .15s ease" }}
                                                     minLength={7}
-                                                    maxLength={36}
+                                                    maxLength={100}
                                                     required
                                                 />
                                             </div>
@@ -77,7 +77,7 @@ export default function Login() {
                                                     placeholder="Senha"
                                                     style={{ transition: "all .15s ease" }}
                                                     minLength={8}
-                                                    maxLength={16}
+                                                    maxLength={35}
                                                     required/>
                                             </div>
                                             <div>
@@ -117,7 +117,7 @@ export default function Login() {
                                         </a>
                                     </div>
                                     <div className="w-1/2 text-right">
-                                        <Link to="/Cadastrar">
+                                        <Link to="/Login/Cadastrar">
                                             <div className="text-white">
                                             <small>Criar nova conta</small>
                                             </div>

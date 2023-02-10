@@ -1,22 +1,23 @@
 import EquipList from "components/EquipList/EquipList";
 import FooterSmallDashboard from "components/FooterSmall/FooterSmallDashboard";
 import Menu from "components/Menu/Menu";
+import User from "components/User/User";
+import { Outlet } from "react-router-dom";
 
-export default function DashboardEquip() {
+export default function Dashboard() {
   return (
     <>
       <div className="flex">
         <div className="w-3/12 bg-white">
           <Menu></Menu>
         </div>
-
         <div className="w-full">
-          <div className="bg-pink-800 h-2/6">
+          <div className="bg-pink-800 h-1/6">
           </div>
           <div>
-          <EquipList></EquipList>
-          <FooterSmallDashboard/>
+           <Outlet></Outlet>
           </div>
+          <FooterSmallDashboard/>
         </div>
       </div>
     </>

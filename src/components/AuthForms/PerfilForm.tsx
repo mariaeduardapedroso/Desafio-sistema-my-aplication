@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 export default function PerfilForm() {
 
@@ -30,6 +29,8 @@ export default function PerfilForm() {
                                             type="text"
                                             className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                                             placeholder="Nome"
+                                            minLength={3}
+                                            maxLength={100}
                                         />
                                     </div>
 
@@ -45,6 +46,8 @@ export default function PerfilForm() {
                                                 type="text"
                                                 className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                                                 placeholder="XXXXX"
+                                                minLength={3}
+                                                maxLength={100}
                                             />
                                         </div>
                                         <div className="pl-3 w-2/6">
@@ -58,6 +61,8 @@ export default function PerfilForm() {
                                                 type="text"
                                                 className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                                                 placeholder="XX"
+                                                minLength={3}
+                                                maxLength={100}
                                             />
                                         </div>
                                     </div>
@@ -74,6 +79,8 @@ export default function PerfilForm() {
                                             type="text"
                                             className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                                             placeholder="Programador Junior"
+                                            minLength={3}
+                                            maxLength={100}
                                         />
                                     </div>
 
@@ -88,6 +95,8 @@ export default function PerfilForm() {
                                             type="text"
                                             className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                                             placeholder="X Teconology"
+                                            minLength={3}
+                                            maxLength={100}
                                         />
                                     </div>
 
@@ -102,6 +111,8 @@ export default function PerfilForm() {
                                             type="text"
                                             className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                                             placeholder="UFXX - Universidade Federal X X"
+                                            minLength={3}
+                                            maxLength={100}
                                         />
                                     </div>
 
@@ -116,6 +127,8 @@ export default function PerfilForm() {
                                             type="text"
                                             className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                                             placeholder="Muita experiencia x anos de mercado, atuando na area de x, x, x."
+                                            minLength={3}
+                                            maxLength={500}
                                         />
                                     </div>
 
@@ -124,12 +137,12 @@ export default function PerfilForm() {
 
                                     <div className="text-center mt-6">
                                         {/* <Link to="/Dashboard/Perfil"> */}
-                                            <button
-                                                className="bg-pink-800 text-white active:bg-gray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                                                type="button"
-                                            >
-                                                Atualizar
-                                            </button>
+                                        <button
+                                            className="bg-pink-800 text-white active:bg-gray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
+                                            type="button"
+                                        >
+                                            Atualizar
+                                        </button>
                                         {/* </Link> */}
                                     </div>
 

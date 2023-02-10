@@ -56,8 +56,8 @@ export default function Subscribe() {
                                             type="text"
                                             className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                                             placeholder="Nome"
-                                            minLength={5}
-                                            maxLength={1000}
+                                            minLength={3}
+                                            maxLength={100}
                                             required
                                         />
                                     </div>
@@ -74,7 +74,7 @@ export default function Subscribe() {
                                             className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                                             placeholder="Email"
                                             minLength={7}
-                                            maxLength={36}
+                                            maxLength={100}
                                             required
                                         />
                                     </div>
@@ -91,7 +91,7 @@ export default function Subscribe() {
                                             className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                                             placeholder="Senha"
                                             minLength={8}
-                                            maxLength={16}
+                                            maxLength={35}
                                             required
                                         />
                                     </div>
