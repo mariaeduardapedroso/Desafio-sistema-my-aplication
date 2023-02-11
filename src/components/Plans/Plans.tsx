@@ -3,9 +3,9 @@ export default function Plans() {
 
     return (
         <main>
-            <div className="pb-20 bg-white mt-24">
+            <div className="pb-20 bg-white mt-10">
                 <div className="pr-12 text-center">
-                    <h1 className="text-gray-700 font-semibold text-3xl mt-48 ">
+                    <h1 className="text-gray-700 font-semibold text-3xl ">
                         Planos especiais para você!
                     </h1>
                     <p className="mt-4 text-lg text-gray-600 mb-24">

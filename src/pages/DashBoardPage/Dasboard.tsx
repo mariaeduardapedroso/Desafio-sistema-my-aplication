@@ -1,7 +1,5 @@
-import EquipList from "components/EquipList/EquipList";
 import FooterSmallDashboard from "components/FooterSmall/FooterSmallDashboard";
 import Menu from "components/Menu/Menu";
-import User from "components/User/User";
 import { Outlet } from "react-router-dom";
 
 export default function Dashboard() {

@@ -1,4 +1,3 @@
-
 export default function PerfilForm() {
 
     return (
@@ -136,7 +135,7 @@ export default function PerfilForm() {
 
 
                                     <div className="text-center mt-6">
-                                        {/* <Link to="/Dashboard/Perfil"> */}
+                                       {/* <Link to="/Dashboard/Perfil"> */}
                                         <button
                                             className="bg-pink-800 text-white active:bg-gray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                                             type="button"
@@ -144,6 +143,7 @@ export default function PerfilForm() {
                                             Atualizar
                                         </button>
                                         {/* </Link> */}
+                                       
                                     </div>
 
                                 </form>

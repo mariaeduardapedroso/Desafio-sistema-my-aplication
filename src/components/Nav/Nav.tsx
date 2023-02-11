@@ -34,7 +34,7 @@ const Nav = () => {
                 </li>
               ))
             }
-            <Link to="/Cadastrar">
+            <Link to="/Login/Cadastrar">
               <Button>
                 Quero Utilizar!
               </Button>
